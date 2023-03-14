@@ -14,7 +14,7 @@ namespace TicTacToeApi.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=superherodb;Trusted_Connection=true;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=tictactoedb;Trusted_Connection=true;TrustServerCertificate=true;");
         }
     }
 }
