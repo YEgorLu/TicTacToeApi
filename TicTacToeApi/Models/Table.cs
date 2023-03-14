@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public int Size { get; set; }
-        public PointValue Next { get; set; }
+        public PointValue NextValue { get; set; }
         public int UnusedPoints { get; set; }
         public int GameId { get; set; }
         public Game Game { get; set; } = null!;

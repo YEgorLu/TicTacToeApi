@@ -51,11 +51,11 @@ namespace TicTacToeApi.Services
             return new NextMoveDTO { GameId = a.Entity.Id, GameEnd = false, NextValue = player1Value, Winner = null };
         }
 
-        public async Task EndGame(int id)
+        public async Task EndGame(int gameId)
         {
-            var curGame = await context.Games.FindAsync(id)
-                ?? throw new InvalidOperationException(string.Format("Game {0} does not exist", id));
-            context.Games.Remove(curGame);
+            var game = await context.Games.FindAsync(gameId)
+                ?? throw new InvalidOperationException(string.Format("Game {0} does not exist", gameId));
+            context.Games.Remove(game);
             await context.SaveChangesAsync();
         }
 

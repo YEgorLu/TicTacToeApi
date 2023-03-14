@@ -36,12 +36,12 @@ namespace TicTacToeApi.Controllers
             return Ok(nextMove);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> EndGame(int id)
+        [HttpDelete("{gameId}")]
+        public async Task<ActionResult> EndGame(int gameId)
         {
             try
             {
-                await gameService.EndGame(id);
+                await gameService.EndGame(gameId);
             }
             catch (InvalidOperationException e)
             {
