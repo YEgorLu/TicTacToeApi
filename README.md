@@ -1,6 +1,7 @@
 # TicTacToeApi
 
 Via API, the player can create a new game, connect \ find it, finish the game and make moves. Users doesn't need to register, server remembers them via ip.
+I'm using MS SQL
 
 ## Create Game
 
