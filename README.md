@@ -29,7 +29,7 @@ POST 'api/TicTacToe' takes size of the field square (1 side) and first player's 
 *POST 'api/TicTacToe/{gameId}/move'* takes position of point, where user wants to set circle or cross and updates point with that position. Returns NextMove object
 
 ## Database relations (MS SQL)
-
+![diagram](./diagram.png)
 
 ## Objects
 
